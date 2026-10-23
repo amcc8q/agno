@@ -127,6 +127,7 @@ agentql = ["agentql"]
 anakin = []  # uses httpx, already a core dependency
 apify = ["apify-client"]
 arxiv = ["arxiv"]
+botsrated = ["botsrated>=0.1.2"]
 brave = ["brave-search"]
 browserbase = ["browserbase", "playwright"]
 cartesia = ["cartesia"]
@@ -304,6 +305,7 @@ tools = [
   "agno[anakin]",
   "agno[apify]",
   "agno[arxiv]",
+  "agno[botsrated]",
   # "agno[brave]",  # Excluded: brave-search 0.2.0 ships invalid metadata (bad httpx specifier) that uv cannot parse; test_setup.sh installs it with --no-deps
   "agno[browserbase]",
   "agno[cartesia]",
@@ -565,6 +567,7 @@ module = [
   "azure.ai.inference.*",
   "azure.core.*",
   "boto3.*",
+  "botsrated.*",
   "botocore.*",
   "bs4.*",
   "bson.*",
